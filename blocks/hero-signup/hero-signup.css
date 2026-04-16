@@ -1,14 +1,23 @@
-.hero-signup-container .hero-signup-wrapper {
+/* Hero signup overlays the carousel-hero block (next sibling) */
+.hero-signup-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  pointer-events: none;
   max-width: unset;
   padding: 0;
 }
 
+/* Match the height of the sibling carousel-hero */
+.hero-signup-wrapper + .carousel-hero-wrapper {
+  position: relative;
+}
+
 .hero-signup {
   position: relative;
-  padding: 60px 24px;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
+  pointer-events: auto;
 }
 
 .hero-signup > div {
@@ -58,9 +67,3 @@
   font-size: 16px;
 }
 
-@media (width >= 900px) {
-  .hero-signup {
-    padding: 80px 64px;
-    min-height: 500px;
-  }
-}

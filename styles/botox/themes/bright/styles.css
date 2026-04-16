@@ -329,6 +329,8 @@ button.secondary:hover {
   color: var(--button-secondary-hover-color);
 }
 
+/* Hero: carousel wrapper is positioning context for signup overlay */
+
 /* Section backgrounds */
 
 main .section.grey {

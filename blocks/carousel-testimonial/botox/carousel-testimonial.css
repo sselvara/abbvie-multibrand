@@ -191,6 +191,8 @@
   background-color: var(--botox-purple, #80379b);
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
+
 .carousel-testimonial .carousel-testimonial-navigation-buttons button {
   background-color: rgb(255 255 255 / 85%);
 }

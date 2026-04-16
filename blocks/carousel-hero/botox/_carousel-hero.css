@@ -1,21 +1,61 @@
 @import '../carousel-hero.css';
 
-/* Botox brand overrides for carousel-hero */
+/* Botox brand overrides for carousel-hero — matching original screenshot */
 
-.carousel-hero .carousel-hero-slide-indicator button:disabled,
-.carousel-hero .carousel-hero-slide-indicator button:hover {
-  background-color: var(--botox-purple, #80379b);
+.carousel-hero .carousel-hero-slide {
+  min-height: 600px;
 }
 
+.carousel-hero .carousel-hero-slide img {
+  height: 600px;
+}
+
+/* Hide dot indicators */
+.carousel-hero .carousel-hero-slide-indicators {
+  display: none;
+}
+
+/* Arrows at bottom-right */
+.carousel-hero .carousel-hero-navigation-buttons {
+  inset: auto 32px 24px auto;
+  transform: none;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+/* Transparent small arrow buttons */
 /* stylelint-disable-next-line no-descending-specificity */
 .carousel-hero .carousel-hero-navigation-buttons button {
-  background-color: rgb(255 255 255 / 70%);
+  background-color: transparent;
+  width: 36px;
+  height: 36px;
+  border-radius: 0;
 }
 
 .carousel-hero .carousel-hero-navigation-buttons button:hover {
-  background-color: rgb(255 255 255 / 90%);
+  background-color: transparent;
 }
 
+/* Thin white chevron arrows */
 .carousel-hero .carousel-hero-navigation-buttons button::after {
-  border-color: var(--botox-purple-dark, #210d3f);
+  border-color: #fff;
+  width: 16px;
+  height: 16px;
+  border-width: 2px;
+  left: 50%;
+}
+
+@media (width >= 900px) {
+  .carousel-hero .carousel-hero-slide {
+    min-height: 750px;
+  }
+
+  .carousel-hero .carousel-hero-slide img {
+    height: 750px;
+  }
+
+  .carousel-hero .carousel-hero-navigation-buttons {
+    inset: auto 48px 32px auto;
+    gap: 32px;
+  }
 }
