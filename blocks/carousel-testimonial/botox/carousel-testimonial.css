@@ -119,6 +119,7 @@
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
+
 .carousel-testimonial .carousel-testimonial-navigation-buttons button {
   width: 40px;
   height: 40px;
@@ -165,4 +166,39 @@
   .carousel-testimonial .carousel-testimonial-slides {
     padding: 0 64px;
   }
+}
+
+/* Botox brand overrides for carousel-testimonial */
+
+.carousel-testimonial .carousel-testimonial-slide-content p:nth-child(2) {
+  color: var(--botox-purple-dark, #210d3f);
+}
+
+.carousel-testimonial .carousel-testimonial-slide-content p:nth-child(3) {
+  color: var(--botox-grey, #55565a);
+}
+
+.carousel-testimonial .carousel-testimonial-slide-content a {
+  color: var(--botox-purple, #80379b);
+}
+
+.carousel-testimonial .carousel-testimonial-slide-content a:hover {
+  color: var(--botox-purple-dark, #210d3f);
+}
+
+.carousel-testimonial .carousel-testimonial-slide-indicator button:disabled,
+.carousel-testimonial .carousel-testimonial-slide-indicator button:hover {
+  background-color: var(--botox-purple, #80379b);
+}
+
+.carousel-testimonial .carousel-testimonial-navigation-buttons button {
+  background-color: rgb(255 255 255 / 85%);
+}
+
+.carousel-testimonial .carousel-testimonial-navigation-buttons button:hover {
+  background-color: #fff;
+}
+
+.carousel-testimonial .carousel-testimonial-navigation-buttons button::after {
+  border-color: var(--botox-purple-dark, #210d3f);
 }

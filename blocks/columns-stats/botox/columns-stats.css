@@ -17,6 +17,7 @@
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
+
 .columns-stats .content--number {
   display: block;
   font-size: var(--heading-font-size-xl, 35px);
@@ -31,4 +32,12 @@
     padding: 48px 64px;
     justify-content: center;
   }
+}
+
+/* Botox brand overrides for columns-stats */
+
+/* stylelint-disable-next-line selector-class-pattern */
+
+.columns-stats .content--number {
+  color: var(--botox-purple, #80379b);
 }

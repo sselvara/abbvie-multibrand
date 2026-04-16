@@ -1,0 +1,41 @@
+@import '../columns-callout.css';
+
+/* Botox brand overrides for columns-callout */
+
+.columns-callout p:first-child {
+  font-size: var(--heading-font-size-m, 25px);
+  font-weight: 400;
+  color: var(--botox-grey, #55565a);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 8px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.columns-callout p:nth-child(2) {
+  font-size: var(--heading-font-size-xl, 35px);
+  font-weight: 600;
+  color: var(--botox-purple-dark, #210d3f);
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+
+.columns-callout a.button {
+  background-color: var(--botox-purple, #80379b);
+  color: #fff;
+  border: 2px solid var(--botox-purple, #80379b);
+}
+
+.columns-callout a.button:hover {
+  background-color: var(--botox-purple-dark, #210d3f);
+  border-color: var(--botox-purple-dark, #210d3f);
+}
+
+/* stylelint-disable no-descending-specificity */
+.columns-callout .footnote,
+.columns-callout p:has(sup) {
+  font-size: var(--body-font-size-s, 14px);
+  color: var(--botox-grey-light, #727272);
+  line-height: 1.4;
+}
+/* stylelint-enable no-descending-specificity */

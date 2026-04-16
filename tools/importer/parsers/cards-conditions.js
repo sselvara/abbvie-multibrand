@@ -14,6 +14,11 @@ export default function parse(element, { document }) {
   cards.forEach((card) => {
     const icon = card.querySelector('.abbv-image-content-container-v2 img');
 
+    // Convert SVG image sources to PNG for EDS compatibility
+    if (icon && icon.src && icon.src.endsWith('.svg')) {
+      icon.src = icon.src + '?fmt=png';
+    }
+
     // Build text cell: category title + condition links with descriptions
     const textCell = document.createElement('div');
 

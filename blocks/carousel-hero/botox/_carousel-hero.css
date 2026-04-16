@@ -1,0 +1,21 @@
+@import '../carousel-hero.css';
+
+/* Botox brand overrides for carousel-hero */
+
+.carousel-hero .carousel-hero-slide-indicator button:disabled,
+.carousel-hero .carousel-hero-slide-indicator button:hover {
+  background-color: var(--botox-purple, #80379b);
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.carousel-hero .carousel-hero-navigation-buttons button {
+  background-color: rgb(255 255 255 / 70%);
+}
+
+.carousel-hero .carousel-hero-navigation-buttons button:hover {
+  background-color: rgb(255 255 255 / 90%);
+}
+
+.carousel-hero .carousel-hero-navigation-buttons button::after {
+  border-color: var(--botox-purple-dark, #210d3f);
+}

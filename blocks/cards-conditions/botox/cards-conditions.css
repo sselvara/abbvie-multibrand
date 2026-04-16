@@ -71,3 +71,23 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Botox brand overrides for cards-conditions */
+
+.cards-conditions .cards-conditions-card-body a {
+  color: var(--botox-purple, #80379b);
+}
+
+.cards-conditions .cards-conditions-card-body a:hover {
+  color: var(--botox-purple-dark, #210d3f);
+}
+
+/* stylelint-disable no-descending-specificity */
+
+.cards-conditions .cards-conditions-card-body .footnote,
+.cards-conditions .cards-conditions-card-body p:last-child:not(:has(a), :has(strong)) {
+  font-size: var(--body-font-size-s, 14px);
+  color: var(--botox-grey-light, #727272);
+}
+
+/* stylelint-enable no-descending-specificity */

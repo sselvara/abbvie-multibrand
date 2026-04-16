@@ -1,0 +1,33 @@
+@import '../hero-signup.css';
+
+/* Botox brand overrides for hero-signup */
+
+.hero-signup h1 {
+  color: var(--botox-purple-dark, #210d3f);
+}
+
+.hero-signup p {
+  font-size: var(--body-font-size-l, 22px);
+  color: var(--botox-purple-dark, #210d3f);
+}
+
+.hero-signup ul,
+.hero-signup li {
+  color: var(--botox-purple-dark, #210d3f);
+}
+
+.hero-signup a.button {
+  background-color: var(--botox-purple, #80379b);
+  color: #fff;
+  border: 2px solid var(--botox-purple, #80379b);
+  text-transform: uppercase;
+}
+
+.hero-signup a.button:hover {
+  background-color: var(--botox-purple-dark, #210d3f);
+  border-color: var(--botox-purple-dark, #210d3f);
+}
+
+.hero-signup a:not(.button) {
+  color: var(--botox-purple-dark, #210d3f);
+}
