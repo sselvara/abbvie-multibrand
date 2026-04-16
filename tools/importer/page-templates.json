@@ -1,0 +1,142 @@
+{
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://www.botox.com/"
+      ],
+      "description": "Botox homepage with hero, product information, and brand messaging",
+      "blocks": [
+        {
+          "name": "hero-signup",
+          "instances": [
+            "div.abbv-container.hero-section div.abbv-container.main-hero"
+          ]
+        },
+        {
+          "name": "carousel-hero",
+          "instances": [
+            "div.abbv-carousel.carousel--hero"
+          ]
+        },
+        {
+          "name": "columns-stats",
+          "instances": [
+            "div.abbv-container.hero--stats"
+          ]
+        },
+        {
+          "name": "columns-callout",
+          "instances": [
+            "div.abbv-container.custom-callout",
+            "div.abbv-container.callout"
+          ]
+        },
+        {
+          "name": "carousel-testimonial",
+          "instances": [
+            "div.abbv-carousel.carousel--multi"
+          ]
+        },
+        {
+          "name": "form",
+          "instances": [
+            "div.abbv-find-a-provider"
+          ]
+        },
+        {
+          "name": "cards-conditions",
+          "instances": [
+            "div.abbv-container.flex--stretch.section--break"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero",
+          "selector": "div.abbv-container.hero-section",
+          "style": null,
+          "blocks": [
+            "hero-signup",
+            "carousel-hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Trust Stats",
+          "selector": "div.abbv-container.hero--stats",
+          "style": null,
+          "blocks": [
+            "columns-stats"
+          ],
+          "defaultContent": [
+            "div.abbv-rich-text.hero__title",
+            "div.hero--stats ~ div.rich-text"
+          ]
+        },
+        {
+          "id": "section-3",
+          "name": "Savings Callout",
+          "selector": "div.abbv-container.custom-callout",
+          "style": null,
+          "blocks": [
+            "columns-callout"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Patient Stories",
+          "selector": "div.abbv-container.carousel--container",
+          "style": null,
+          "blocks": [
+            "carousel-testimonial"
+          ],
+          "defaultContent": [
+            "div.section--full > div.rich-text"
+          ]
+        },
+        {
+          "id": "section-5",
+          "name": "Find a Specialist",
+          "selector": [
+            "div.abbv-container.callout",
+            "div.abbv-find-a-provider"
+          ],
+          "style": null,
+          "blocks": [
+            "columns-callout",
+            "form"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6",
+          "name": "Conditions Grid",
+          "selector": "div.abbv-container.section--full.background-color__gray-light",
+          "style": "grey",
+          "blocks": [
+            "cards-conditions"
+          ],
+          "defaultContent": [
+            "div.section--full.background-color__gray-light > div.rich-text",
+            "div.callout.callout--center"
+          ]
+        },
+        {
+          "id": "section-7",
+          "name": "Important Safety Information",
+          "selector": "div.abbv-inline-use-isi",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "div.abbv-inline-safety",
+            "div.abbv-inline-miscisi"
+          ]
+        }
+      ]
+    }
+  ]
+}

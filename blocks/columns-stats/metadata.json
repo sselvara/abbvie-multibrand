@@ -1,0 +1,40 @@
+{
+  "variantName": "columns-stats",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-04-16T11:55:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.botox.com/",
+    "originPage": "Botox homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "statistics",
+    "imagePattern": "noimg",
+    "structure": "3 columns with large numbers and descriptions"
+  },
+  "contentPattern": {
+    "structure": "large number + description text per column",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "statistics displays",
+      "key metrics sections",
+      "numerical highlights"
+    ],
+    "notSuitableFor": [
+      "image-text side-by-side layouts",
+      "callout sections with CTAs",
+      "content with rich formatting"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-16T11:55:00.000Z"
+  }
+}

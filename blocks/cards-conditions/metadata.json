@@ -1,0 +1,40 @@
+{
+  "variantName": "cards-conditions",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-04-16T11:55:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.botox.com/",
+    "originPage": "Botox homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "grey",
+    "density": "spacious",
+    "purpose": "conditions-grid",
+    "imagePattern": "icon",
+    "structure": "icon + category title + condition links per card"
+  },
+  "contentPattern": {
+    "structure": "icon image + category heading + list of condition links with descriptions",
+    "buttonCount": 0,
+    "imageCount": 5
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "medical condition category grids",
+      "icon-based category cards",
+      "link collection cards with icons"
+    ],
+    "notSuitableFor": [
+      "photo-heavy product cards",
+      "testimonial cards",
+      "simple text-only cards"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-16T11:55:00.000Z"
+  }
+}

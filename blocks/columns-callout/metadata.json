@@ -1,0 +1,40 @@
+{
+  "variantName": "columns-callout",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-04-16T11:55:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.botox.com/",
+    "originPage": "Botox homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "callout",
+    "imagePattern": "large",
+    "structure": "image + text with CTA side-by-side"
+  },
+  "contentPattern": {
+    "structure": "subtitle + heading + bullet list + CTA + image",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "image-text callout sections",
+      "promotional callouts with CTAs",
+      "feature highlight with image"
+    ],
+    "notSuitableFor": [
+      "statistics displays",
+      "multi-column equal content",
+      "text-only layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-16T11:55:00.000Z"
+  }
+}

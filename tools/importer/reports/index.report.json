@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "url": "https://www.botox.com/",
+  "path": "index",
+  "timestamp": "2026-04-16T12:14:48.554Z",
+  "title": "Home - BOTOX® (onabotulinumtoxinA)",
+  "template": "homepage",
+  "blocks": [
+    "hero-signup",
+    "carousel-hero",
+    "columns-stats",
+    "columns-callout",
+    "columns-callout",
+    "carousel-testimonial",
+    "form",
+    "cards-conditions",
+    "cards-conditions"
+  ]
+}
