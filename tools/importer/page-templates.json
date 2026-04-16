@@ -137,6 +137,92 @@
           ]
         }
       ]
+    },
+    {
+      "name": "duopa-homepage",
+      "urls": [
+        "https://www.duopa.com/"
+      ],
+      "description": "Duopa homepage with hero, benefits, peer mentor, patient stories, and safety information",
+      "blocks": [
+        {
+          "name": "hero",
+          "instances": [
+            "div.abbv-background-container.duopa-hero-home-bg"
+          ]
+        },
+        {
+          "name": "cards",
+          "instances": [
+            "div.abbv-container.duopa-whitecontainer"
+          ]
+        },
+        {
+          "name": "columns-mentor",
+          "instances": [
+            "div.abbv-container.duopa-blue-container-1"
+          ]
+        },
+        {
+          "name": "hero-stories",
+          "instances": [
+            "div.abbv-background-container.patient-story"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero",
+          "selector": "div.abbv-background-container.duopa-hero-home-bg",
+          "style": null,
+          "blocks": [
+            "hero",
+            "cards"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Peer Mentor",
+          "selector": "div.abbv-container.duopa-blue-container-1",
+          "style": "dark",
+          "blocks": [
+            "columns-mentor"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Patient Stories",
+          "selector": "div.abbv-background-container.patient-story",
+          "style": null,
+          "blocks": [
+            "hero-stories"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Navigation",
+          "selector": "a.duopa-button-next-page",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "a.duopa-button-next-page"
+          ]
+        },
+        {
+          "id": "section-5",
+          "name": "Safety Information",
+          "selector": "div.abbv-inline-use-isi",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "div.abbv-inline-use-isi"
+          ]
+        }
+      ]
     }
   ]
 }

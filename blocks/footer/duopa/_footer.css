@@ -1,0 +1,62 @@
+@import '../footer.css';
+
+/* Duopa brand overrides for footer */
+
+footer {
+  font-family: var(--body-font-family);
+  background-color: var(--duopa-blue-dark, #005195);
+}
+
+footer .footer {
+  color: #fff;
+}
+
+footer .footer .default-content-wrapper {
+  padding: 40px 24px;
+}
+
+footer .footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+
+footer .footer li {
+  margin: 0;
+}
+
+footer .footer a:any-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+footer .footer a:hover {
+  text-decoration: underline;
+  color: var(--duopa-teal, #00a1bd);
+}
+
+footer .footer p {
+  color: rgb(255 255 255 / 80%);
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+footer .footer img {
+  height: 32px;
+  width: auto;
+  margin-top: 16px;
+}
+
+@media (width >= 900px) {
+  footer .footer .default-content-wrapper {
+    padding: 48px 64px;
+  }
+}

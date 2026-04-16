@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.duopa.com/",
+  "path": "duopa/index",
+  "timestamp": "2026-04-16T20:09:51.337Z",
+  "title": "Parkinson’s Disease & DUOPA™ (carbidopa/levodopa) | Official Patient Site",
+  "template": "duopa-homepage",
+  "blocks": [
+    "hero",
+    "cards",
+    "columns-mentor",
+    "hero-stories"
+  ]
+}

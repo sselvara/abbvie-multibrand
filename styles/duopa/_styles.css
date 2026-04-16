@@ -1,0 +1,143 @@
+@import '../styles.css';
+
+/* Duopa brand global styles */
+
+body {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  line-height: 1.45;
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font-family);
+  color: var(--duopa-blue-deep);
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: var(--heading-font-size-xxl);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--heading-font-size-l);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--heading-font-size-m);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: var(--heading-font-size-m);
+  font-weight: 700;
+  color: var(--duopa-blue-deep);
+}
+
+h5 {
+  font-size: var(--heading-font-size-m);
+  font-weight: 400;
+  color: var(--duopa-grey);
+}
+
+/* Links */
+a:any-link {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Primary button */
+a.button.primary,
+button.primary,
+a.button:any-link {
+  background-color: var(--button-bg);
+  color: var(--button-color);
+  border: var(--button-border);
+  border-radius: var(--button-border-radius);
+  padding: var(--button-padding);
+  font-weight: var(--button-font-weight);
+  font-size: var(--button-font-size);
+  font-family: var(--body-font-family);
+  text-decoration: none;
+  text-transform: var(--button-text-transform);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: inline-block;
+}
+
+a.button.primary:hover,
+button.primary:hover,
+a.button:hover {
+  background-color: var(--button-hover-bg);
+  color: var(--button-color);
+}
+
+/* Secondary button */
+a.button.secondary,
+button.secondary {
+  background-color: var(--button-secondary-bg);
+  color: var(--button-secondary-color);
+  border: var(--button-secondary-border);
+  border-radius: var(--button-border-radius);
+  padding: var(--button-padding);
+  font-weight: var(--button-font-weight);
+  font-size: var(--button-font-size);
+  font-family: var(--body-font-family);
+  text-decoration: none;
+  text-transform: var(--button-text-transform);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a.button.secondary:hover,
+button.secondary:hover {
+  background-color: var(--button-secondary-hover-bg);
+  color: var(--button-secondary-hover-color);
+}
+
+/* Section backgrounds */
+main .section.dark {
+  background-color: var(--duopa-blue-dark);
+  padding: 40px 0;
+  color: #fff;
+}
+
+main .section.dark h1,
+main .section.dark h2,
+main .section.dark h3,
+main .section.dark p {
+  color: #fff;
+}
+
+main .section.grey {
+  background-color: var(--duopa-grey-light);
+  padding: 40px 0;
+}
+
+/* Lists */
+ul {
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+  line-height: 1.5;
+}
+
+/* Strong text */
+strong {
+  color: var(--duopa-blue-deep);
+}
+
+/* Footnote/disclaimer text */
+.footnote {
+  font-size: var(--body-font-size-s);
+  color: var(--duopa-grey);
+}

@@ -1,0 +1,132 @@
+.carousel-hero-container .carousel-hero-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.carousel-hero .carousel-hero-slides-container {
+  position: relative;
+}
+
+.carousel-hero .carousel-hero-slides,
+.carousel-hero .carousel-hero-slide-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-hero .carousel-hero-slides {
+  display: flex;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow: scroll clip;
+}
+
+.carousel-hero .carousel-hero-slides::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-hero .carousel-hero-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+}
+
+.carousel-hero .carousel-hero-slide picture,
+.carousel-hero .carousel-hero-slide p {
+  margin: 0;
+  line-height: 0;
+}
+
+.carousel-hero .carousel-hero-slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-hero .carousel-hero-slide-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+}
+
+.carousel-hero .carousel-hero-slide-indicator button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #dadada;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.carousel-hero .carousel-hero-navigation-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  right: 16px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+
+.carousel-hero .carousel-hero-navigation-buttons button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  pointer-events: all;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.carousel-hero .carousel-hero-navigation-buttons button::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid;
+  border-bottom: 0;
+  border-left: 0;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 2px);
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.carousel-hero .carousel-hero-navigation-buttons button.slide-next::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+  left: calc(50% - 2px);
+}
+
+@media (width >= 900px) {
+  .carousel-hero .carousel-hero-slide {
+    min-height: 550px;
+  }
+
+  .carousel-hero .carousel-hero-slide img {
+    height: 550px;
+  }
+}
+
+/* Brand-specific overrides for carousel-hero block */
+
+/* .carousel-hero {
+  h1 {
+    background-color: red;
+  }
+
+
+} */

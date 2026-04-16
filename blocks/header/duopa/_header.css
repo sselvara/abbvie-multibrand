@@ -1,0 +1,73 @@
+@import '../header.css';
+
+/* Duopa brand overrides for header */
+
+header .header {
+  font-family: var(--body-font-family);
+}
+
+header nav {
+  background-color: #fff;
+}
+
+header nav .nav-brand a {
+  font-weight: 700;
+}
+
+header nav .nav-brand img {
+  height: 54px;
+  width: auto;
+}
+
+header nav .nav-sections ul > li > a {
+  color: var(--duopa-blue-deep, #004877);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+header nav .nav-sections ul > li > a:hover {
+  color: var(--duopa-teal, #00a1bd);
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+header nav .nav-tools a {
+  background-color: var(--duopa-teal, #00a1bd);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+header nav .nav-tools a:hover {
+  background-color: var(--duopa-teal-dark, #008a9e);
+}
+
+/* Mobile nav styling */
+@media (width < 900px) {
+  header nav[aria-expanded='true'] {
+    background-color: #fff;
+  }
+
+  header nav .nav-sections ul > li > a {
+    font-size: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--duopa-grey-light, #f2f2f2);
+  }
+}
+
+@media (width >= 900px) {
+  header nav .nav-sections ul {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+}
