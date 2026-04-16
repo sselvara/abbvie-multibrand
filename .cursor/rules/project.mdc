@@ -1,0 +1,27 @@
+---
+description: EDS Multi-Brand — core conventions for inline suggestions. Always applied.
+alwaysApply: true
+---
+
+# EDS Multi-Brand
+
+Multi-brand AEM Edge Delivery project. Vanilla JS + CSS3, no JS build step.
+
+## Commands
+```sh
+npm start                # CSS builder + AEM proxy (localhost:3000)
+npm run scaffold:create  # Create Block | Brand | Theme
+npm run scaffold:build   # Compile merged CSS
+npm run lint && npm run lint:fix
+```
+
+## Critical Rules
+- **Never modify** `scripts/aem.js`
+- **Never edit** `file.css` without underscore prefix — those are compiled outputs. Edit `_file.css` instead, then run `npm run scaffold:build`
+- **Scope all CSS** to `.{block-name}` — no unscoped selectors
+- **Block JS**: `default export decorate()` always just calls `renderBlock()`. Decoration logic lives in `exportedDecorateBlock()` and is wired via `block-config.js`
+- Breakpoints: `(width >= 600px)` and `(width >= 900px)`
+- Always include `.js` extension in imports
+
+## For agent tasks
+Read `AGENTS.md` and run `.agents/discover-skills` to find available skills for this project.
