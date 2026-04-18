@@ -116,17 +116,28 @@
   left: calc(50% - 2px);
 }
 
-/* QULIPTA HCP brand overrides for carousel (patient stories) */
+/* QULIPTA HCP brand overrides — patient story card carousel */
 
 .carousel {
-  padding: 20px 20px 0;
+  padding: 0 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.carousel .carousel-slides-container {
+  position: relative;
 }
 
 .carousel .carousel-slide {
   background-color: var(--qulipta-blue-grey-light, #deeaee);
   min-height: auto;
   flex-direction: column;
+  border-radius: 0;
 }
+
+/* ===== PHOTO + NAME BADGE + BIO ===== */
+
+/* Top area: photo left, name badge + bio right */
 
 .carousel .carousel-slide .carousel-slide-image {
   position: relative;
@@ -140,109 +151,123 @@
 .carousel .carousel-slide .carousel-slide-image img {
   width: 100%;
   height: auto;
-  max-height: 365px;
+  max-height: 300px;
   object-fit: cover;
+  display: block;
 }
+
+/* ===== CONTENT AREA ===== */
 
 .carousel .carousel-slide .carousel-slide-content {
   background-color: transparent;
   color: var(--qulipta-pewter, #374550);
   padding: 0;
+  margin: 0;
 }
 
-/* Patient name badge — orange */
+/* Patient name — orange badge */
 
 .carousel .carousel-slide-content h3 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 900;
   color: #fff;
   background-color: var(--qulipta-orange, #f15e22);
   display: inline-block;
-  padding: 8px 20px;
-  margin: -20px 0 0;
-  position: relative;
-  z-index: 1;
+  padding: 6px 16px;
+  margin: 0;
+  line-height: 1.3;
 }
 
+/* "Real QULIPTA patient" subtitle */
+
 .carousel .carousel-slide-content p:has(em) {
-  background-color: var(--qulipta-orange, #f15e22);
-  display: inline-block;
   margin: 0;
 }
 
 .carousel .carousel-slide-content em {
   color: #fff;
-  padding: 4px 20px;
-  font-size: 16px;
+  background-color: var(--qulipta-orange, #f15e22);
+  padding: 2px 16px 6px;
+  font-size: 14px;
   font-style: normal;
+  display: inline-block;
 }
 
-/* Bio list next to photo */
+/* Bio bullet list */
 
 .carousel .carousel-slide-content > ul:first-of-type {
-  padding: 16px 20px;
+  padding: 12px 16px 12px 32px;
   margin: 0;
 }
 
 .carousel .carousel-slide-content > ul:first-of-type li {
   font-size: 14px;
   color: var(--qulipta-pewter, #374550);
+  margin-bottom: 2px;
 }
 
-/* Before QULIPTA section — white bg, rounded top-left */
+/* ===== BEFORE QULIPTA — White section ===== */
 
 .carousel .carousel-slide-content h4:first-of-type {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: rgb(128 174 186);
   text-transform: uppercase;
-  margin: 0 0 8px;
+  letter-spacing: 0.05em;
+  margin: 0;
+  padding: 24px 24px 0;
   background-color: #fff;
-  padding: 32px 32px 0;
-  border-radius: 20px 0 0;
+  border-radius: 16px 0 0;
 }
 
-/* Before QULIPTA quote */
+/* Before quote */
 
-.carousel .carousel-slide-content h4:first-of-type ~ p:first-of-type {
+/* stylelint-disable no-descending-specificity */
+
+.carousel .carousel-slide-content h4:first-of-type + p {
   background-color: #fff;
-  padding: 0 32px;
+  padding: 8px 24px 0;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--qulipta-pewter, #374550);
 }
 
-/* Before QULIPTA bullet list */
+/* Before bullet list */
 
 .carousel .carousel-slide-content h4:first-of-type ~ ul {
   background-color: #fff;
-  padding: 8px 32px 32px 52px;
+  padding: 8px 24px 24px 40px;
   margin: 0;
+  font-size: 14px;
 }
 
-/* WITH QULIPTA section — blue-grey bg */
+/* ===== WITH QULIPTA — Blue-grey section ===== */
 
 .carousel .carousel-slide-content h4:last-of-type {
   color: var(--qulipta-orange, #f15e22);
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 700;
+  text-transform: uppercase;
   margin: 0;
-  padding: 20px 32px 8px;
+  padding: 20px 24px 8px;
   background-color: var(--qulipta-blue-grey, #f0f5f7);
 }
 
-/* After section content */
+/* After section paragraphs and lists */
 
-.carousel .carousel-slide-content h4:last-of-type ~ p,
+.carousel .carousel-slide-content h4:last-of-type ~ p {
+  background-color: var(--qulipta-blue-grey, #f0f5f7);
+  padding: 4px 24px;
+  margin: 0;
+  font-size: 14px;
+}
+
 .carousel .carousel-slide-content h4:last-of-type ~ ul {
   background-color: var(--qulipta-blue-grey, #f0f5f7);
-  padding: 0 32px;
+  padding: 4px 24px 12px 40px;
   margin: 0;
-}
-
-.carousel .carousel-slide-content h4:last-of-type ~ ul {
-  padding: 8px 32px 16px 52px;
-}
-
-.carousel .carousel-slide-content strong {
-  color: var(--qulipta-pewter, #374550);
+  font-size: 14px;
 }
 
 /* SEE DATA links */
@@ -252,73 +277,101 @@
   font-weight: 700;
   text-decoration: underline;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 13px;
 }
-
-/* stylelint-disable-next-line no-descending-specificity */
 
 .carousel .carousel-slide-content a:hover {
   color: var(--qulipta-teal-dark, #0c6279);
 }
 
-/* Disclaimer text */
+/* Disclaimer text at bottom */
 
 .carousel .carousel-slide-content > p:last-child {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--qulipta-pewter, #374550);
-  padding: 16px 20px;
+  padding: 16px 24px;
   background-color: var(--qulipta-blue-grey-light, #deeaee);
   margin: 0;
+  line-height: 1.4;
 }
 
-/* Dot indicators */
+/* stylelint-enable no-descending-specificity */
+
+/* ===== DOT INDICATORS ===== */
 
 .carousel .carousel-slide-indicators {
   background-color: transparent;
-  gap: 8px;
-  padding: 16px;
+  gap: 10px;
+  padding: 20px;
 }
 
 .carousel .carousel-slide-indicator button {
-  width: 14px;
-  height: 14px;
-  background-color: #dadada;
+  width: 12px;
+  height: 12px;
+  background-color: #c0c0c0;
 }
 
 .carousel .carousel-slide-indicator button:disabled {
   background-color: var(--qulipta-teal, #107e9a);
 }
 
-/* Nav arrows — small, transparent */
+/* ===== NAV ARROWS ===== */
+
+.carousel .carousel-navigation-buttons {
+  top: 50%;
+  left: -40px;
+  right: -40px;
+}
 
 /* stylelint-disable-next-line no-descending-specificity */
 
 .carousel .carousel-navigation-buttons button {
   background-color: transparent;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
+  border-radius: 0;
 }
 
 .carousel .carousel-navigation-buttons button:hover {
-  background-color: rgb(55 69 80 / 15%);
+  background-color: rgb(55 69 80 / 10%);
 }
 
 .carousel .carousel-navigation-buttons button::after {
-  border-color: var(--qulipta-pewter, #374550);
-  width: 10px;
-  height: 10px;
+  border-color: var(--qulipta-teal, #107e9a);
+  width: 14px;
+  height: 14px;
+  border-width: 3px;
 }
 
+/* ===== DESKTOP — side-by-side photo + content ===== */
+
 @media (width >= 900px) {
+  .carousel {
+    max-width: 1000px;
+    padding: 0 60px;
+  }
+
   .carousel .carousel-slide {
     flex-direction: row;
+    align-items: stretch;
   }
 
   .carousel .carousel-slide .carousel-slide-image {
-    flex: 0 0 45%;
+    flex: 0 0 40%;
+  }
+
+  .carousel .carousel-slide .carousel-slide-image img {
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
   }
 
   .carousel .carousel-slide .carousel-slide-content {
     flex: 1;
+  }
+
+  .carousel .carousel-navigation-buttons {
+    left: -50px;
+    right: -50px;
   }
 }
