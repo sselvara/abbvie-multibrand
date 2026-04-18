@@ -1,0 +1,59 @@
+.columns-callout > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px 24px;
+}
+
+.columns-callout > div > div {
+  flex: 1;
+}
+
+.columns-callout img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.columns-callout > div > .columns-callout-img-col {
+  order: 0;
+}
+
+.columns-callout > div > .columns-callout-img-col img {
+  display: block;
+}
+
+.columns-callout ul {
+  padding-left: 20px;
+  margin: 0 0 24px;
+}
+
+.columns-callout li {
+  font-size: var(--body-font-size-m);
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.columns-callout a.button {
+  border-radius: 8px;
+  padding: 14px 30px;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+@media (width >= 900px) {
+  .columns-callout > div {
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+    padding: 60px 64px;
+  }
+
+  .columns-callout > div > div {
+    flex: 1;
+  }
+}

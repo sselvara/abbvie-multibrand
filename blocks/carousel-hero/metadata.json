@@ -1,0 +1,40 @@
+{
+  "variantName": "carousel-hero",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-04-16T11:55:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.botox.com/",
+    "originPage": "Botox homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "hero-background",
+    "imagePattern": "large",
+    "structure": "full-width background image slides"
+  },
+  "contentPattern": {
+    "structure": "image-only slides with lifestyle photos",
+    "buttonCount": 0,
+    "imageCount": 6
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "hero background image carousels",
+      "full-width rotating lifestyle imagery",
+      "brand homepage background slideshows"
+    ],
+    "notSuitableFor": [
+      "content carousels with text",
+      "testimonial carousels",
+      "product image galleries"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-16T11:55:00.000Z"
+  }
+}

@@ -1,0 +1,79 @@
+@import '../hero.css';
+
+/* Duopa brand overrides for hero block */
+
+.hero {
+  min-height: 400px;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px 24px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--duopa-blue-deep, #004877);
+  line-height: 1.1;
+}
+
+.hero p {
+  font-size: 28px;
+  color: var(--duopa-blue-deep, #004877);
+}
+
+/* Variation: stories — patient stories hero */
+.hero.stories {
+  min-height: 350px;
+  align-items: center;
+}
+
+.hero.stories h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+}
+
+.hero.stories p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.hero.stories .button-container a.button {
+  background-color: var(--duopa-teal, #00a1bd);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.hero.stories .button-container a.button:hover {
+  background-color: var(--duopa-teal-dark, #008a9e);
+}
+
+.hero.stories p:last-child {
+  font-size: 12px;
+  color: rgb(255 255 255 / 80%);
+  margin-top: 16px;
+}
+
+@media (width >= 900px) {
+  .hero {
+    min-height: 550px;
+    padding: 60px 64px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero.stories {
+    min-height: 450px;
+    padding: 60px 64px;
+  }
+}

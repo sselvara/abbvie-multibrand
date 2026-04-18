@@ -1,0 +1,74 @@
+/* Hero signup overlays the carousel-hero block (next sibling) */
+.hero-signup-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  pointer-events: none;
+  max-width: unset;
+  padding: 0;
+}
+/* Match the height of the sibling carousel-hero */
+.hero-signup-wrapper + .carousel-hero-wrapper {
+  position: relative;
+}
+.hero-signup {
+  position: relative;
+  pointer-events: auto;
+}
+.hero-signup > div {
+  max-width: 480px;
+  z-index: 1;
+}
+.hero-signup h1 {
+  font-size: var(--heading-font-size-xxl);
+  font-weight: 700;
+  line-height: 1.05;
+  margin: 0 0 16px;
+}
+.hero-signup p {
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+.hero-signup ul {
+  padding-left: 20px;
+  margin: 0 0 24px;
+}
+.hero-signup li {
+  font-size: var(--body-font-size-m);
+  margin-bottom: 4px;
+}
+.hero-signup .button-container {
+  margin: 8px 0;
+}
+.hero-signup a.button {
+  border-radius: 8px;
+  padding: 14px 30px;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+.hero-signup a:not(.button) {
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 16px;
+}
+/* Brand-specific overrides for hero-signup block */
+/* .hero-signup {
+  h1 {
+    background-color: red;
+  }
+
+
+} */
+/* Brand-specific overrides for duopa block */
+/* .duopa {
+  h1 {
+    background-color: red;
+  }
+
+
+} */

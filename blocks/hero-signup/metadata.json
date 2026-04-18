@@ -1,0 +1,40 @@
+{
+  "variantName": "hero-signup",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-04-16T11:55:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.botox.com/",
+    "originPage": "Botox homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "signup-hero",
+    "imagePattern": "large",
+    "structure": "heading + bullet list + 2 CTAs"
+  },
+  "contentPattern": {
+    "structure": "heading + subtitle + bullet list + primary CTA + secondary link",
+    "buttonCount": 2,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "homepage hero with signup call-to-action",
+      "landing pages with account registration prompts",
+      "pages with text overlay on background imagery"
+    ],
+    "notSuitableFor": [
+      "simple text-only heroes",
+      "product detail page heroes",
+      "heroes without call-to-action"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-16T11:55:00.000Z"
+  }
+}

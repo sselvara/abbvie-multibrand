@@ -1,0 +1,8 @@
+@import '../columns-stats.css';
+
+/* Botox brand overrides for columns-stats */
+
+/* stylelint-disable-next-line selector-class-pattern */
+.columns-stats .content--number {
+  color: var(--botox-purple, #80379b);
+}

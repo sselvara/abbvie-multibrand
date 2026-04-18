@@ -9,7 +9,7 @@ import {
   loadCSS,
 } from './aem.js';
 import {
-  loadSection, loadHeader, loadFooter, loadSections,
+  loadSection, loadHeader, loadFooter, loadSections, getBrandCode,
 } from './multi-theme.js';
 
 /**
@@ -32,6 +32,12 @@ function buildHeroBlock(main) {
  */
 async function loadFonts() {
   await loadCSS(`${window.hlx.codeBasePath}/styles/fonts.css`);
+  const brand = getBrandCode();
+  if (brand) {
+    await loadCSS(`${window.hlx.codeBasePath}/styles/${brand}/fonts.css`);
+    await loadCSS(`${window.hlx.codeBasePath}/styles/${brand}/tokens.css`);
+    await loadCSS(`${window.hlx.codeBasePath}/styles/${brand}/styles.css`);
+  }
   try {
     if (!window.location.hostname.includes('localhost')) sessionStorage.setItem('fonts-loaded', 'true');
   } catch (e) {

@@ -1,0 +1,63 @@
+@import '../footer.css';
+
+/* Botox brand overrides for footer */
+
+footer {
+  font-family: var(--body-font-family);
+  background-color: var(--botox-purple-dark, #210d3f);
+}
+
+footer .footer {
+  color: #fff;
+}
+
+footer .footer .default-content-wrapper {
+  padding: 40px 24px;
+}
+
+footer .footer h5 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 12px;
+}
+
+footer .footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+footer .footer li {
+  margin: 0 0 6px;
+}
+
+footer .footer a:any-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+footer .footer a:hover {
+  text-decoration: underline;
+  color: var(--botox-purple-light, #a55fbf);
+}
+
+footer .footer p {
+  color: rgb(255 255 255 / 70%);
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+@media (width >= 900px) {
+  footer .footer .default-content-wrapper {
+    padding: 48px 64px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 1fr;
+    gap: 32px;
+  }
+}

@@ -1,0 +1,201 @@
+@import '../styles.css';
+
+/* QULIPTA HCP brand global styles */
+
+body {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font-family);
+  color: var(--qulipta-pewter);
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: var(--heading-font-size-xxl);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--heading-font-size-xl);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--heading-font-size-l);
+  font-weight: 600;
+}
+
+/* Links */
+a:any-link {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Primary button (teal) */
+a.button.primary,
+button.primary,
+a.button:any-link {
+  background-color: var(--button-bg);
+  color: var(--button-color);
+  border: var(--button-border);
+  border-radius: var(--button-border-radius);
+  padding: var(--button-padding);
+  font-weight: var(--button-font-weight);
+  font-size: var(--button-font-size);
+  font-family: var(--body-font-family);
+  text-decoration: none;
+  text-transform: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  display: inline-block;
+}
+
+a.button.primary:hover,
+button.primary:hover,
+a.button:hover {
+  background-color: var(--button-hover-bg);
+  border: var(--button-hover-border);
+  color: var(--button-color);
+}
+
+/* CTA pill button — pewter pill for standalone page CTAs */
+/* stylelint-disable no-descending-specificity */
+.section .button-container a.button:any-link {
+  background-color: var(--qulipta-pewter, #374550);
+  color: #fff;
+  border: 1px solid var(--qulipta-pewter, #374550);
+  border-radius: 24px;
+  padding: 10px 40px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.section .button-container a.button:hover {
+  background-color: var(--qulipta-teal, #107e9a);
+  border-color: var(--qulipta-teal, #107e9a);
+}
+/* stylelint-enable no-descending-specificity */
+
+/* ===== MAIN CONTENT SECTION (carousel-container) ===== */
+
+/* This single section holds hero + carousel + CTA + ISI */
+.section.carousel-container {
+  background-color: var(--qulipta-blue-grey, #f0f5f7);
+  padding: 0;
+}
+
+/* ===== HERO AREA (first default-content-wrapper) ===== */
+
+/* Contains sticky buttons + H1 — pewter background */
+.section.carousel-container > .default-content-wrapper:first-child {
+  background-color: var(--qulipta-pewter, #374550);
+  padding: 24px 24px 32px;
+  position: relative;
+
+  /* Orange bar at bottom */
+  border-bottom: 8px solid var(--qulipta-orange, #f15e22);
+}
+
+.section.carousel-container > .default-content-wrapper:first-child h1 {
+  color: #fff;
+  font-size: 42px;
+  margin: 0;
+}
+
+/* Sticky buttons in hero — stack on right */
+/* stylelint-disable no-descending-specificity */
+.section.carousel-container > .default-content-wrapper:first-child .button-container {
+  margin: 0 0 8px;
+}
+
+.section.carousel-container > .default-content-wrapper:first-child .button-container a.button:any-link {
+  background-color: var(--qulipta-teal, #107e9a);
+  color: #fff;
+  border: 1px solid var(--qulipta-teal, #107e9a);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+}
+
+.section.carousel-container > .default-content-wrapper:first-child .button-container a.button:hover {
+  background-color: var(--qulipta-teal-dark, #0c6279);
+  border-color: var(--qulipta-teal-dark, #0c6279);
+}
+/* stylelint-enable no-descending-specificity */
+
+/* ===== CAROUSEL AREA ===== */
+.section.carousel-container > .carousel-wrapper {
+  padding: 40px 0;
+  background-color: var(--qulipta-blue-grey, #f0f5f7);
+}
+
+/* ===== CTA + ISI AREA (last default-content-wrapper) ===== */
+.section.carousel-container > .default-content-wrapper:last-child {
+  padding: 24px 24px 40px;
+  background-color: #fff;
+}
+
+/* CTA centered */
+.section.carousel-container > .default-content-wrapper:last-child > p:first-child {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* ISI text styling */
+/* stylelint-disable-next-line no-descending-specificity */
+.section.carousel-container > .default-content-wrapper:last-child p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Lists */
+ul {
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+  line-height: 1.5;
+}
+
+/* Strong text */
+strong {
+  font-weight: 700;
+}
+
+@media (width >= 900px) {
+  .section.carousel-container > .default-content-wrapper:first-child {
+    padding: 40px 64px 48px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .section.carousel-container > .default-content-wrapper:first-child h1 {
+    font-size: 55px;
+    flex: 1;
+    order: 2;
+  }
+
+  .section.carousel-container > .default-content-wrapper:first-child .button-container {
+    order: 1;
+    margin-left: auto;
+  }
+
+  .section.carousel-container > .default-content-wrapper:last-child {
+    padding: 32px 64px 48px;
+  }
+}

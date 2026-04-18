@@ -1,0 +1,285 @@
+{
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://www.botox.com/"
+      ],
+      "description": "Botox homepage with hero, product information, and brand messaging",
+      "blocks": [
+        {
+          "name": "hero-signup",
+          "instances": [
+            "div.abbv-container.hero-section div.abbv-container.main-hero"
+          ]
+        },
+        {
+          "name": "carousel-hero",
+          "instances": [
+            "div.abbv-carousel.carousel--hero"
+          ]
+        },
+        {
+          "name": "columns-stats",
+          "instances": [
+            "div.abbv-container.hero--stats"
+          ]
+        },
+        {
+          "name": "columns-callout",
+          "instances": [
+            "div.abbv-container.custom-callout",
+            "div.abbv-container.callout"
+          ]
+        },
+        {
+          "name": "carousel-testimonial",
+          "instances": [
+            "div.abbv-carousel.carousel--multi"
+          ]
+        },
+        {
+          "name": "form",
+          "instances": [
+            "div.abbv-find-a-provider"
+          ]
+        },
+        {
+          "name": "cards-conditions",
+          "instances": [
+            "div.abbv-container.flex--stretch.section--break"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero",
+          "selector": "div.abbv-container.hero-section",
+          "style": null,
+          "blocks": [
+            "hero-signup",
+            "carousel-hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Trust Stats",
+          "selector": "div.abbv-container.hero--stats",
+          "style": null,
+          "blocks": [
+            "columns-stats"
+          ],
+          "defaultContent": [
+            "div.abbv-rich-text.hero__title",
+            "div.hero--stats ~ div.rich-text"
+          ]
+        },
+        {
+          "id": "section-3",
+          "name": "Savings Callout",
+          "selector": "div.abbv-container.custom-callout",
+          "style": null,
+          "blocks": [
+            "columns-callout"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Patient Stories",
+          "selector": "div.abbv-container.carousel--container",
+          "style": null,
+          "blocks": [
+            "carousel-testimonial"
+          ],
+          "defaultContent": [
+            "div.section--full > div.rich-text"
+          ]
+        },
+        {
+          "id": "section-5",
+          "name": "Find a Specialist",
+          "selector": [
+            "div.abbv-container.callout",
+            "div.abbv-find-a-provider"
+          ],
+          "style": null,
+          "blocks": [
+            "columns-callout",
+            "form"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6",
+          "name": "Conditions Grid",
+          "selector": "div.abbv-container.section--full.background-color__gray-light",
+          "style": "grey",
+          "blocks": [
+            "cards-conditions"
+          ],
+          "defaultContent": [
+            "div.section--full.background-color__gray-light > div.rich-text",
+            "div.callout.callout--center"
+          ]
+        },
+        {
+          "id": "section-7",
+          "name": "Important Safety Information",
+          "selector": "div.abbv-inline-use-isi",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "div.abbv-inline-safety",
+            "div.abbv-inline-miscisi"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "duopa-homepage",
+      "urls": [
+        "https://www.duopa.com/"
+      ],
+      "description": "Duopa homepage with hero, benefits, peer mentor, patient stories, and safety information",
+      "blocks": [
+        {
+          "name": "hero",
+          "instances": [
+            "div.abbv-background-container.duopa-hero-home-bg"
+          ]
+        },
+        {
+          "name": "cards",
+          "instances": [
+            "div.abbv-container.duopa-whitecontainer"
+          ]
+        },
+        {
+          "name": "columns-mentor",
+          "instances": [
+            "div.abbv-container.duopa-blue-container-1"
+          ]
+        },
+        {
+          "name": "hero-stories",
+          "instances": [
+            "div.abbv-background-container.patient-story"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero",
+          "selector": "div.abbv-background-container.duopa-hero-home-bg",
+          "style": null,
+          "blocks": [
+            "hero",
+            "cards"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Peer Mentor",
+          "selector": "div.abbv-container.duopa-blue-container-1",
+          "style": "dark",
+          "blocks": [
+            "columns-mentor"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Patient Stories",
+          "selector": "div.abbv-background-container.patient-story",
+          "style": null,
+          "blocks": [
+            "hero-stories"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Navigation",
+          "selector": "a.duopa-button-next-page",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "a.duopa-button-next-page"
+          ]
+        },
+        {
+          "id": "section-5",
+          "name": "Safety Information",
+          "selector": "div.abbv-inline-use-isi",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "div.abbv-inline-use-isi"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "quliptahcp-patient-stories",
+      "urls": [
+        "https://www.quliptahcp.com/patient-stories"
+      ],
+      "description": "QULIPTA HCP patient stories page with carousel of patient testimonials",
+      "blocks": [
+        {
+          "name": "carousel",
+          "instances": [
+            "div.carousel-patient-stories"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero",
+          "selector": ".violator-title",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".violator-title h1"
+          ]
+        },
+        {
+          "id": "section-2",
+          "name": "Patient Stories",
+          "selector": "div.carousel-patient-stories",
+          "style": null,
+          "blocks": [
+            "carousel"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "CTA",
+          "selector": "a.qulipta-bottom-cta",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "a.qulipta-bottom-cta"
+          ]
+        },
+        {
+          "id": "section-4",
+          "name": "Safety Info",
+          "selector": ".abbv-inline-use-isi",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".abbv-inline-use-isi"
+          ]
+        }
+      ]
+    }
+  ]
+}

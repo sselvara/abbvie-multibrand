@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.quliptahcp.com/patient-stories",
+  "path": "quliptahcp/patient-stories",
+  "timestamp": "2026-04-17T14:54:19.664Z",
+  "title": "Real QULIPTA® Patient Stories - QULIPTA® (atogepant) HCP",
+  "template": "quliptahcp-patient-stories",
+  "blocks": [
+    "carousel"
+  ]
+}
