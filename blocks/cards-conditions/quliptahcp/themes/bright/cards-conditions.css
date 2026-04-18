@@ -1,0 +1,93 @@
+.cards-conditions > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.cards-conditions > ul > li {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 8%);
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.cards-conditions > ul > li:hover {
+  box-shadow: 0 4px 20px rgb(0 0 0 / 12%);
+}
+
+.cards-conditions .cards-conditions-card-image {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 24px 24px 16px;
+  line-height: 0;
+}
+
+.cards-conditions .cards-conditions-card-image img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.cards-conditions .cards-conditions-card-body {
+  padding: 0 24px 24px;
+}
+
+.cards-conditions .cards-conditions-card-body strong {
+  display: block;
+  font-size: var(--body-font-size-m);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.cards-conditions .cards-conditions-card-body p {
+  margin: 0 0 8px;
+}
+
+.cards-conditions .cards-conditions-card-body a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--body-font-size-m);
+  display: block;
+  padding: 4px 0;
+}
+
+.cards-conditions .cards-conditions-card-body a:hover {
+  text-decoration: underline;
+}
+
+@media (width >= 600px) {
+  .cards-conditions > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards-conditions > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Brand-specific overrides for cards-conditions block */
+
+/* .cards-conditions {
+  h1 {
+    background-color: red;
+  }
+
+
+} */
+
+/* Brand-specific overrides for quliptahcp block */
+
+/* .quliptahcp {
+  h1 {
+    background-color: red;
+  }
+
+
+} */

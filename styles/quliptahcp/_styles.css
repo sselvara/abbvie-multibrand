@@ -1,0 +1,153 @@
+@import '../styles.css';
+
+/* QULIPTA HCP brand global styles */
+
+body {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font-family);
+  color: var(--qulipta-pewter);
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: var(--heading-font-size-xxl);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--heading-font-size-xl);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--heading-font-size-l);
+  font-weight: 600;
+}
+
+/* Links */
+a:any-link {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Primary button (teal) */
+a.button.primary,
+button.primary,
+a.button:any-link {
+  background-color: var(--button-bg);
+  color: var(--button-color);
+  border: var(--button-border);
+  border-radius: var(--button-border-radius);
+  padding: var(--button-padding);
+  font-weight: var(--button-font-weight);
+  font-size: var(--button-font-size);
+  font-family: var(--body-font-family);
+  text-decoration: none;
+  text-transform: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  display: inline-block;
+}
+
+a.button.primary:hover,
+button.primary:hover,
+a.button:hover {
+  background-color: var(--button-hover-bg);
+  border: var(--button-hover-border);
+  color: var(--button-color);
+}
+
+/* Secondary button (pewter pill) */
+a.button.secondary,
+button.secondary {
+  background-color: var(--qulipta-pewter, #374550);
+  color: #fff;
+  border: 1px solid var(--qulipta-pewter, #374550);
+  border-radius: 24px;
+  padding: 10px 40px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: var(--body-font-family);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+a.button.secondary:hover,
+button.secondary:hover {
+  background-color: var(--qulipta-teal, #107e9a);
+  border-color: var(--qulipta-teal, #107e9a);
+  color: #fff;
+}
+
+/* CTA pill button (standalone links styled as pewter pills) */
+
+/* CTA pill button — overrides primary teal for standalone page CTAs */
+/* stylelint-disable no-descending-specificity */
+.section .button-container a.button:any-link {
+  background-color: var(--qulipta-pewter, #374550);
+  color: #fff;
+  border: 1px solid var(--qulipta-pewter, #374550);
+  border-radius: 24px;
+  padding: 10px 40px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.section .button-container a.button:hover {
+  background-color: var(--qulipta-teal, #107e9a);
+  border-color: var(--qulipta-teal, #107e9a);
+}
+/* stylelint-enable no-descending-specificity */
+
+/* Section backgrounds */
+main .section.light {
+  background-color: var(--qulipta-blue-grey-light);
+  padding: 40px 0;
+}
+
+main .section.dark {
+  background-color: var(--qulipta-pewter);
+  padding: 40px 0;
+  color: #fff;
+}
+
+main .section.dark h1,
+main .section.dark h2,
+main .section.dark h3,
+main .section.dark p {
+  color: #fff;
+}
+
+/* Accent elements (orange badges) */
+.accent {
+  background-color: var(--qulipta-orange);
+  color: #fff;
+}
+
+/* Lists */
+ul {
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+  line-height: 1.5;
+}
+
+/* Strong text */
+strong {
+  font-weight: 700;
+}

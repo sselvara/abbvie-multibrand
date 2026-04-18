@@ -1,0 +1,80 @@
+@import '../header.css';
+
+/* QULIPTA HCP brand overrides for header */
+
+header .header {
+  font-family: var(--body-font-family);
+}
+
+header nav {
+  background-color: var(--qulipta-pewter, #374550);
+}
+
+header nav .nav-brand img {
+  height: 50px;
+  width: auto;
+}
+
+header nav .nav-sections {
+  background-color: var(--qulipta-pewter-light, #f3f3f3);
+}
+
+header nav .nav-sections ul > li > a {
+  color: var(--qulipta-pewter, #374550);
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+header nav .nav-sections ul > li > a:hover {
+  color: var(--qulipta-teal, #107e9a);
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+header nav .nav-tools a {
+  background-color: var(--qulipta-teal, #107e9a);
+  color: #fff;
+  border: 1px solid var(--qulipta-teal, #107e9a);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+header nav .nav-tools a:hover {
+  background-color: var(--qulipta-teal-dark, #0c6279);
+  border-color: var(--qulipta-teal-dark, #0c6279);
+}
+
+/* Mobile hamburger on dark bg */
+header nav .nav-hamburger button {
+  color: #fff;
+}
+
+@media (width < 900px) {
+  header nav[aria-expanded='true'] {
+    background-color: var(--qulipta-pewter, #374550);
+  }
+
+  header nav[aria-expanded='true'] .nav-sections {
+    background-color: var(--qulipta-pewter-light, #f3f3f3);
+  }
+
+  header nav .nav-sections ul > li > a {
+    font-size: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
+
+@media (width >= 900px) {
+  header nav .nav-sections ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+}

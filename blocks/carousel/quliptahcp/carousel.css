@@ -1,0 +1,324 @@
+.carousel .carousel-slides-container {
+  position: relative;
+}
+
+.carousel .carousel-slides,
+.carousel .carousel-slide-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel .carousel-slides {
+  display: flex;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow: scroll clip;
+}
+
+.carousel .carousel-slides::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel .carousel-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.carousel .carousel-slide .carousel-slide-image picture {
+  position: absolute;
+  inset: 0;
+}
+
+.carousel .carousel-slide .carousel-slide-image picture > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel .carousel-slide .carousel-slide-content {
+  z-index: 1;
+  padding: 16px;
+  position: relative;
+}
+
+.carousel .carousel-slide-indicators {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 12px;
+  padding: 12px;
+  line-height: 0;
+}
+
+.carousel .carousel-slide-indicator button {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #dadada;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.carousel .carousel-navigation-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+
+.carousel .carousel-navigation-buttons button {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  pointer-events: all;
+  transition: background-color 0.2s;
+}
+
+.carousel .carousel-navigation-buttons button::after {
+  display: block;
+  content: '';
+  border: 2px solid;
+  border-bottom: 0;
+  border-left: 0;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 2px);
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.carousel .carousel-navigation-buttons button.slide-next::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+  left: calc(50% - 2px);
+}
+
+/* QULIPTA HCP brand overrides for carousel (patient stories) */
+
+.carousel {
+  padding: 20px 20px 0;
+}
+
+.carousel .carousel-slide {
+  background-color: var(--qulipta-blue-grey-light, #deeaee);
+  min-height: auto;
+  flex-direction: column;
+}
+
+.carousel .carousel-slide .carousel-slide-image {
+  position: relative;
+}
+
+.carousel .carousel-slide .carousel-slide-image picture {
+  position: relative;
+  inset: auto;
+}
+
+.carousel .carousel-slide .carousel-slide-image img {
+  width: 100%;
+  height: auto;
+  max-height: 365px;
+  object-fit: cover;
+}
+
+.carousel .carousel-slide .carousel-slide-content {
+  background-color: transparent;
+  color: var(--qulipta-pewter, #374550);
+  padding: 0;
+}
+
+/* Patient name badge — orange */
+
+.carousel .carousel-slide-content h3 {
+  font-size: 22px;
+  font-weight: 900;
+  color: #fff;
+  background-color: var(--qulipta-orange, #f15e22);
+  display: inline-block;
+  padding: 8px 20px;
+  margin: -20px 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+.carousel .carousel-slide-content p:has(em) {
+  background-color: var(--qulipta-orange, #f15e22);
+  display: inline-block;
+  margin: 0;
+}
+
+.carousel .carousel-slide-content em {
+  color: #fff;
+  padding: 4px 20px;
+  font-size: 16px;
+  font-style: normal;
+}
+
+/* Bio list next to photo */
+
+.carousel .carousel-slide-content > ul:first-of-type {
+  padding: 16px 20px;
+  margin: 0;
+}
+
+.carousel .carousel-slide-content > ul:first-of-type li {
+  font-size: 14px;
+  color: var(--qulipta-pewter, #374550);
+}
+
+/* Before QULIPTA section — white bg, rounded top-left */
+
+.carousel .carousel-slide-content h4:first-of-type {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(128 174 186);
+  text-transform: uppercase;
+  margin: 0 0 8px;
+  background-color: #fff;
+  padding: 32px 32px 0;
+  border-radius: 20px 0 0;
+}
+
+/* Before QULIPTA quote */
+
+.carousel .carousel-slide-content h4:first-of-type ~ p:first-of-type {
+  background-color: #fff;
+  padding: 0 32px;
+}
+
+/* Before QULIPTA bullet list */
+
+.carousel .carousel-slide-content h4:first-of-type ~ ul {
+  background-color: #fff;
+  padding: 8px 32px 32px 52px;
+  margin: 0;
+}
+
+/* WITH QULIPTA section — blue-grey bg */
+
+.carousel .carousel-slide-content h4:last-of-type {
+  color: var(--qulipta-orange, #f15e22);
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  padding: 20px 32px 8px;
+  background-color: var(--qulipta-blue-grey, #f0f5f7);
+}
+
+/* After section content */
+
+.carousel .carousel-slide-content h4:last-of-type ~ p,
+.carousel .carousel-slide-content h4:last-of-type ~ ul {
+  background-color: var(--qulipta-blue-grey, #f0f5f7);
+  padding: 0 32px;
+  margin: 0;
+}
+
+.carousel .carousel-slide-content h4:last-of-type ~ ul {
+  padding: 8px 32px 16px 52px;
+}
+
+.carousel .carousel-slide-content strong {
+  color: var(--qulipta-pewter, #374550);
+}
+
+/* SEE DATA links */
+
+.carousel .carousel-slide-content a {
+  color: var(--qulipta-teal, #107e9a);
+  font-weight: 700;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+
+.carousel .carousel-slide-content a:hover {
+  color: var(--qulipta-teal-dark, #0c6279);
+}
+
+/* Disclaimer text */
+
+.carousel .carousel-slide-content > p:last-child {
+  font-size: 12px;
+  color: var(--qulipta-pewter, #374550);
+  padding: 16px 20px;
+  background-color: var(--qulipta-blue-grey-light, #deeaee);
+  margin: 0;
+}
+
+/* Dot indicators */
+
+.carousel .carousel-slide-indicators {
+  background-color: transparent;
+  gap: 8px;
+  padding: 16px;
+}
+
+.carousel .carousel-slide-indicator button {
+  width: 14px;
+  height: 14px;
+  background-color: #dadada;
+}
+
+.carousel .carousel-slide-indicator button:disabled {
+  background-color: var(--qulipta-teal, #107e9a);
+}
+
+/* Nav arrows — small, transparent */
+
+/* stylelint-disable-next-line no-descending-specificity */
+
+.carousel .carousel-navigation-buttons button {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel .carousel-navigation-buttons button:hover {
+  background-color: rgb(55 69 80 / 15%);
+}
+
+.carousel .carousel-navigation-buttons button::after {
+  border-color: var(--qulipta-pewter, #374550);
+  width: 10px;
+  height: 10px;
+}
+
+@media (width >= 900px) {
+  .carousel .carousel-slide {
+    flex-direction: row;
+  }
+
+  .carousel .carousel-slide .carousel-slide-image {
+    flex: 0 0 45%;
+  }
+
+  .carousel .carousel-slide .carousel-slide-content {
+    flex: 1;
+  }
+}

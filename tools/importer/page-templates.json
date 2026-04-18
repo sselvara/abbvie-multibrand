@@ -223,6 +223,63 @@
           ]
         }
       ]
+    },
+    {
+      "name": "quliptahcp-patient-stories",
+      "urls": [
+        "https://www.quliptahcp.com/patient-stories"
+      ],
+      "description": "QULIPTA HCP patient stories page with carousel of patient testimonials",
+      "blocks": [
+        {
+          "name": "carousel",
+          "instances": [
+            "div.carousel-patient-stories"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero",
+          "selector": ".violator-title",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".violator-title h1"
+          ]
+        },
+        {
+          "id": "section-2",
+          "name": "Patient Stories",
+          "selector": "div.carousel-patient-stories",
+          "style": null,
+          "blocks": [
+            "carousel"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "CTA",
+          "selector": "a.qulipta-bottom-cta",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "a.qulipta-bottom-cta"
+          ]
+        },
+        {
+          "id": "section-4",
+          "name": "Safety Info",
+          "selector": ".abbv-inline-use-isi",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".abbv-inline-use-isi"
+          ]
+        }
+      ]
     }
   ]
 }
